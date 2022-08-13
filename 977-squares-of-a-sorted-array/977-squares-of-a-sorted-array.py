@@ -4,6 +4,5 @@ class Solution:
         sqr=0
 
         for i in range(len(nums)):
-            sqr=nums[i]**2
-            dp.append(sqr)
+            dp.append(nums[i]**2)
         return sorted(dp)
