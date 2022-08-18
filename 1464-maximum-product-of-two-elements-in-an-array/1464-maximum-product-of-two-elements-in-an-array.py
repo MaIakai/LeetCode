@@ -12,6 +12,6 @@ class Solution:
         
         first=heapq.heappop(heap)[1] - 1
         second=heapq.heappop(heap)[1] - 1
-        print(first,second)
+        
         
         return first * second
