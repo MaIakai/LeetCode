@@ -1,10 +1,7 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         
-        answer={}
-        
-        for idx, val in enumerate(nums):
-            answer[val]=idx
+        answer=dict(zip(nums,nums))
         
         if len(nums)==len(answer.keys()):
             return False
