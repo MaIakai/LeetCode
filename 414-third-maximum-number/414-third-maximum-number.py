@@ -7,8 +7,8 @@ class Solution:
                 if the third maximum does not exist, return the maximum number
         """
         unique_nums=set(nums)
-        
-        sorted_nums=self.quick_sort(list(unique_nums))
+        new_nums=list(unique_nums)
+        sorted_nums=self.quick_sort(new_nums)
         
         if len(sorted_nums)>=3:
             return sorted_nums[-3]
