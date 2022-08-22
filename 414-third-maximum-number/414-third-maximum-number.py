@@ -6,9 +6,9 @@ class Solution:
         return: the third distinct maximum number in the nums, 
                 if the third maximum does not exist, return the maximum number
         """
-        unique_nums=set(nums)
-        new_nums=list(unique_nums)
-        sorted_nums=self.quick_sort(new_nums)
+        unique_nums=list(set(nums))
+    
+        sorted_nums=self.quick_sort(unique_nums)
         
         if len(sorted_nums)>=3:
             return sorted_nums[-3]
