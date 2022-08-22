@@ -8,8 +8,8 @@ class Solution:
         """
         unique_nums=list(set(nums))
     
-        #sorted_nums=self.quick_sort(unique_nums)
-        sorted_nums=sorted(unique_nums)
+        sorted_nums=self.quick_sort(unique_nums)
+        #sorted_nums=sorted(unique_nums)
         if len(sorted_nums)>=3:
             return sorted_nums[-3]
         else:
