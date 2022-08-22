@@ -10,10 +10,10 @@ class Solution:
         
         return: Modify nums1 in-place
         """
-        if len(nums1)==1 and nums1[-1] == 0:
-            nums3=nums2
-        else:
-            nums3=nums1[:len(nums1)-n]+nums2
+        # if len(nums1)==1 and nums1[-1] == 0:
+        #     nums3=nums2
+        # else:
+        nums3=nums1[:len(nums1)-n]+nums2
         nums3=self.merge_sort(nums3)
         
         del nums1[:]
