@@ -19,7 +19,7 @@ class Solution:
             
         ans=0
         for i in range(2, n):
-            if primes[i]==True:
+            if primes[i]:
                 ans+=1
             
         
