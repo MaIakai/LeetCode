@@ -6,9 +6,8 @@ class Solution:
         
         return the number of prime numbers that are less than n
         """
-        if n<=2:
-            return 0
-        primes=[True] * (n+1)
+        
+        primes=[True for _ in range(n+1)]
         i=2
         while i*i<n:
             if primes[i]:
@@ -19,7 +18,7 @@ class Solution:
             
         ans=0
         for i in range(2, n):
-            if primes[i]==True:
+            if primes[i]:
                 ans+=1
             
         
