@@ -8,7 +8,7 @@ class Solution:
         """
         if n<=2:
             return 0
-        primes=[True for i in range(n+1)]
+        primes=[True] * (n+1)
         i=2
         while i*i<n:
             if primes[i]:
