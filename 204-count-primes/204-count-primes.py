@@ -6,7 +6,10 @@ class Solution:
         
         return the number of prime numbers that are less than n
         """
-        
+        if n<=2:
+            return 0
+        if n==3:
+            return 1
         primes=[True for _ in range(n+1)]
         i=2
         while i*i<n:
